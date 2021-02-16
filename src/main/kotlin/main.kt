@@ -14,7 +14,7 @@ fun main() {
     println(first * second * third * fourth * fifth)
 }
 
-fun tobogganRun(theMap: List<String>, movesRight: Int, twoMovesDown: Boolean = false): Int {
+fun tobogganRun(theMap: List<String>, movesRight: Int, twoMovesDown: Boolean = false): Long {
     var treesEncountered = 0
     val mapWidth = theMap[0].length
     var position = 0
@@ -27,5 +27,5 @@ fun tobogganRun(theMap: List<String>, movesRight: Int, twoMovesDown: Boolean = f
         position += movesRight
     }
     println(treesEncountered)
-    return treesEncountered
+    return treesEncountered.toLong()
 }
